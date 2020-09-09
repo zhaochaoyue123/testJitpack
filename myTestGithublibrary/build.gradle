@@ -1,5 +1,5 @@
 apply plugin: 'com.android.library'
-apply plugin: 'maven'
+//apply plugin: 'maven'
 
 android {
     compileSdkVersion 29
@@ -32,6 +32,7 @@ dependencies {
 
 }
 
+/*
 uploadArchives {
     repositories.mavenDeployer {
         def mavenDirPath = file('D:\\workspace\\mavenfiel\\testGithub')
@@ -42,4 +43,4 @@ uploadArchives {
             version "1.0.0"
         }
     }
-}
+}*/

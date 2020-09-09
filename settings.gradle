@@ -1,0 +1,5 @@
+include ':myTestBean2library'
+include ':myTestBeanlibrary'
+include ':myTestGithublibrary'
+include ':app'
+rootProject.name = "My Application"

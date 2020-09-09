@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/ll_item_monitor_company"
+    android:gravity="center_vertical"
+    android:layout_height="45dp">
+
+    <ImageView
+        android:id="@+id/iv_spread_level_0"
+        android:layout_width="34dp"
+        android:layout_height="30dp"
+        android:padding="12dp"
+        app:srcCompat="@mipmap/logistics_bt_arrow_down_gray" />
+
+    <TextView
+        android:id="@+id/tv_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical"
+        android:text="TextView" />
+</LinearLayout>

@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'maven'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.zhaochaoyue123'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //api 'com.zdww.base.testGithub:testGithub:1.0.0'
+    api project(':myTestGithublibrary')
+}
+
+/*
+uploadArchives {
+    repositories.mavenDeployer {
+        def mavenDirPath = file('D:\\workspace\\mavenfiel\\testBean3')
+        repository(url: "file://${mavenDirPath.absolutePath}")
+        pom.project {
+            groupId "com.zdww.base.testBean2"
+            artifactId "testBean2"
+            version "1.0.0"
+        }
+    }
+}*/
